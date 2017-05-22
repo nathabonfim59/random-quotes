@@ -1,13 +1,16 @@
+var quote, quotesDatabase;
 // Download the database of quotes
-$.getJSON("http://localhost:3000/quotes", function(json) {
+$.getJSON("quotes.json", function(json) {
     quotesDatabase = json;
-//    console.log(quotesDatabase[randomNumber]);
+    console.log(quotesDatabase);
 });
 
 
 function randomQuote() {
-    var randomNumber = Math.floor(Math.random() * (quotesDatabase.length));
-    var quote = quotesDatabase[randomNumber];
+    var randomNumber = Math.floor(Math.random() * (quotesDatabase.quotes.length));
+    console.log(randomNumber);
+    var quote = quotesDatabase.quotes[randomNumber];
+    console.log(quote);
     
     return quote;
 }
@@ -31,8 +34,5 @@ $(document).ready(function() {
     $("#shareOnTwitter").click(function(){
         var quoteForTwitter = [('"'+quote.content+'"'), quote.author];
         window.open('https://twitter.com/intent/tweet?original_referer=' + myUrl + '&ref_src=twsrc%5Etfw&text=' + quoteForTwitter[0] + '%20%E2%80%94%20' + quoteForTwitter[1] +'%20via&tw_p=tweetbutton&url=' + myUrl);
-    })
-
+    });
 });
-
-//6022
