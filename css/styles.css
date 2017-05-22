@@ -1,0 +1,102 @@
+html, body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.container {
+    background-color: #F55;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+}
+
+.wrapper-quote {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.wrapper-quote .author {
+    align-self: flex-end;
+}
+
+.quote {
+    font-size: 20px;
+}
+
+.btn {
+    color: #F55;
+    height: 40px;
+    background-color: white;
+    font-size: 20px;
+    border-style: solid;
+    text-align: center;
+}
+
+.author {
+    max-width: 350px;
+    height: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 18px;
+    padding-top: 5px;
+    border: none;
+    border-radius: 22px;
+}
+
+.btn-random {
+    border-radius: 20px;
+    background: #F55;
+    color: white;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    transition: background .6s;
+}
+
+.btn-random:hover {
+    background: #fff;
+    color: #f55;
+    transition: background .6s;
+}
+
+.btn-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.btn-circle:hover {
+    background: #f55;
+    color: #fff;
+    transition: background .6s;
+}
+
+.wrapper-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-random {
+    max-width: 350px;
+    justify-content: flex-end; 
+    
+}
+
+.wrapper-social {
+    
+}
