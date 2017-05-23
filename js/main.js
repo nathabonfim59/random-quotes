@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('#randomQuote').click(function() {
         changeQuoteText();
     });
-    var myUrl = 'https://github.com/nathabonfim59';
+    var myUrl = 'https://nathabonfim59.github.io/random-quotes/';
     $("#shareOnFacebook").click(function() {
         var quoteForFacebook = ['"'+(quote.content.split(' ').join('+')+'"'), quote.author.split(' ').join('+')];
         window.open('https://www.facebook.com/sharer/sharer.php?u='+myUrl+';src=sdkpreparse&quote='+ quoteForFacebook[0]+'+—'+quoteForFacebook[1],'popup');
