@@ -7,7 +7,9 @@ html, body {
     justify-content: center;
 }
 
-
+*:focus {
+    outline: none;
+}
 
 button::-moz-focus-inner {
   border: 0;
@@ -40,7 +42,8 @@ button::-moz-focus-inner {
     height: 40px;
     background-color: white;
     font-size: 20px;
-    border-style: solid;
+    border-style: solid !important;
+    border-color: #fff;
     text-align: center;
 }
 
