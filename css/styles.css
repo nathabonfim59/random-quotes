@@ -103,3 +103,12 @@ button::-moz-focus-inner {
 .wrapper-social {
     margin-right: 10px;
 }
+
+.footer {
+    text-align: center;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
