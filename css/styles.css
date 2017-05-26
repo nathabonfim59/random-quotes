@@ -55,6 +55,7 @@ button::-moz-focus-inner {
     font-size: 18px;
     padding-top: 5px;
     border: none;
+    border-color: #f55;
     border-radius: 22px;
 }
 
